@@ -1,0 +1,14 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore IntelliJ/NetBeans/VSCode project files
+.idea/
+*.iml
+.vscode/
+
+# Ignore Python cache (if relevant)
+__pycache__/
+*.pyc

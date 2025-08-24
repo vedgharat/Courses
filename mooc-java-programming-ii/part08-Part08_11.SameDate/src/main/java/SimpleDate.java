@@ -51,4 +51,32 @@ public class SimpleDate {
         return this.year - other.year - yearRemoved;
     }
 
+    @Override
+    public boolean equals(Object comparedObj) {
+
+        // if the variables are located in the same place, they're the same
+        if (this == comparedObj) {
+            return true;
+        }
+
+        // if not of type simple date. false they aren't the same
+        if (!(comparedObj instanceof SimpleDate)) {
+            return false;
+        }
+        //converting the object to a SimpleDate obj
+        SimpleDate comparedDate = (SimpleDate) comparedObj;
+
+        // if the instance variables of the objects are the same, so are the objects
+        if (this.day == comparedDate.day
+                && this.month == comparedDate.month
+                && this.year == comparedDate.year) {
+
+            return true;
+        }
+
+        // otherwise, the objects aren't the same
+        return false;
+
+    }
+
 }
